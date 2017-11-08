@@ -20,7 +20,7 @@ public class WarAndPiece {
                 .forEach(System.out::println);
     }
     public static Stream<String> getWordsStream() throws IOException {
-        return new BufferedReader(new InputStreamReader(new FileInputStream("D:\\Torents\\book1.txt"), Charset.forName("windows-1251")))
+        return new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\Dmitry\\IdeaProjects\\sdsgs\\book1.txt"), Charset.forName("windows-1251")))
                 .lines()
                 .flatMap(lines-> Arrays.stream(lines.split(" ")));
     }
